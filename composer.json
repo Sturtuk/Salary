@@ -1,0 +1,36 @@
+{
+    "name": "sturt/salary",
+    "description": "Parse salary slip in images, get the salary amount",
+    "type": "library",
+    "license": "MIT",
+    "keywords":[
+        "laravel",
+        "pay slip extract",
+        "pay slips",
+        "salary slips",
+        "ocr tools"
+    ],
+    "authors": [
+        {
+            "name": "Edwin F Sturt",
+            "email": "hello@edwinsturt.in"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php":">=7.0",
+        "thiagoalessio/tesseract_ocr": "^2.7"
+    },
+    "autoload": {
+        "psr-4": {
+          "sturt\\salary\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "sturt\\salary\\SalaryServiceProvider"
+            ]
+        }
+    }
+}
